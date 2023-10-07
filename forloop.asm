@@ -2,17 +2,17 @@ section .text
 org 100h
 
 start:
-    mov cx, 8
+    mov cx, 9
     
 
 my_loop:
     push cx
-    mov dx, 8
+    mov dx, 9
     
     sub dx, cx
     add dx, '0'
 
-    mov ax, 2
+    mov ax, 200h
     int 21h 
 
     pop cx
